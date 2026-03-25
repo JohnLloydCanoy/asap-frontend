@@ -20,4 +20,7 @@ const BetaAlertDialog = ({ supportEmail = "canoy.john812@gmail.com" }) => {
                 aria-modal="true"
                 aria-labelledby="modal-title"
                 >
+                {/* Header Area */}
+                <div className="flex items-center gap-3 mb-4">
+                    <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-500">
 
