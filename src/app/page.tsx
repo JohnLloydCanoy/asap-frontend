@@ -1,6 +1,11 @@
+import BetaAlertDialog from "./alert";
+
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      {/* Render the alert dialog here */}
+      <BetaAlertDialog />
       <h1 className="text-4xl font-bold tracking-tight">ASAP</h1>
       <p className="mt-4 text-lg text-muted-foreground">
         Automated Social Analytics Platform. Frontend is live.
