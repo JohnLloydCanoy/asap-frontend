@@ -1,30 +1,21 @@
 "use client";
 
-
 import React, { useState } from 'react';
-
 
     const BetaAlertDialog = ({ supportEmail = "canoy.john812@gmail.com" }) => {
     const [isOpen, setIsOpen] = useState(true);
 
-
     if (!isOpen) return null;
 
-
     return (
-        <div
+        <div 
         className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
-        role="dialog"
-        aria-modal="true"
+        role="dialog" 
+        aria-modal="true" 
         aria-labelledby="modal-title"
         >
-        <div
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-        >
-
+        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-2xl max-w-md w-full p-6 border border-gray-200 dark:border-gray-700">
+            
             {/* Header Area */}
             <div className="flex items-center gap-3 mb-4">
             <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-500">
@@ -38,11 +29,10 @@ import React, { useState } from 'react';
             </h2>
             </div>
 
-
             {/* Body Content */}
             <div className="mb-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed space-y-3">
             <p>
-                We are thrilled to have you here! Please note that the Automated Social Analytics Platform is currently in active development.
+                We are thrilled to have you here! Please note that the Automated Social Analytics Platform is currently in active development. 
             </p>
             <p>
                 While we are working hard to stabilize the system, you may occasionally encounter bugs, unexpected behaviors, or features that are still being polished.
@@ -53,10 +43,9 @@ import React, { useState } from 'react';
             </p>
             </div>
 
-
             {/* Action Buttons */}
             <div className="flex justify-end gap-3 mt-2">
-            <button
+            <button 
                 onClick={() => setIsOpen(false)}
                 className="px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 transition-colors duration-200"
             >
@@ -64,11 +53,9 @@ import React, { useState } from 'react';
             </button>
             </div>
 
-
         </div>
         </div>
     );
     };
-
 
     export default BetaAlertDialog;
