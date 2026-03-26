@@ -15,7 +15,7 @@ import {
     FaTimes,
     FaSun,
     FaMoon,
-    FaUser // <-- Added the User icon for the Profile tab
+    FaUser
 } from "react-icons/fa";
 
 // --- TYPE DEFINITIONS ---
