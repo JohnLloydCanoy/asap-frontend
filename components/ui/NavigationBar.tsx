@@ -29,7 +29,7 @@ type NavigationItem = {
 // --- DATA STRUCTURE---
 const NAVIGATION_ITEMS: NavigationItem[] = [
     // Main Features
-    { label: "Dashboard", href: "/", icon: FaHome },
+    { label: "Dashboard", href: "../../src/app/pages/Home/page.tsx", icon: FaHome },
     { label: "Analytics", href: "/analytics", icon: FaChartBar },
     { label: "Calendar", href: "/calendar", icon: FaCalendarAlt },
     { label: "Ask AI", href: "/ask-ai", icon: FaRobot },
