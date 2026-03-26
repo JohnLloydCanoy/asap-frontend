@@ -26,7 +26,7 @@ type NavigationItem = {
     isUtility?: boolean; 
 };
 
-// --- DATA STRUCTURE (Single Source of Truth) ---
+// --- DATA STRUCTURE---
 const NAVIGATION_ITEMS: NavigationItem[] = [
     // Main Features
     { label: "Dashboard", href: "/", icon: FaHome },
