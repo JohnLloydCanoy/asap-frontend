@@ -14,7 +14,8 @@ import {
     FaSignOutAlt,
     FaTimes,
     FaSun,
-    FaMoon
+    FaMoon,
+    FaUser // <-- Added the User icon for the Profile tab
 } from "react-icons/fa";
 
 // --- TYPE DEFINITIONS ---
@@ -32,6 +33,7 @@ const NAVIGATION_ITEMS: NavigationItem[] = [
     { label: "Analytics", href: "/analytics", icon: FaChartBar },
     { label: "Calendar", href: "/calendar", icon: FaCalendarAlt },
     { label: "Ask AI", href: "/ask-ai", icon: FaRobot },
+    { label: "Profile", href: "/profile", icon: FaUser }, // <-- Added Profile Tab
     { label: "Settings", href: "/settings", icon: FaCog },
     
     // Utilities (Pushed to the bottom)
@@ -73,16 +75,16 @@ export default function NavigationBar() {
                 />
             )}
 
-            {/* Sidebar Container (Slightly wider to accommodate the full name) */}
+            {/* Sidebar Container (Added custom shadow to the right edge) */}
             <aside
-                className={`fixed left-0 top-0 z-40 flex h-screen w-72 flex-col border-r border-gray-100 bg-[#fbfbfe] transition-transform duration-300 ease-in-out md:sticky md:translate-x-0 ${
+                className={`fixed left-0 top-0 z-40 flex h-screen w-72 flex-col border-r border-gray-100/50 bg-[#fbfbfe] shadow-[4px_0_24px_rgba(0,0,0,0.04)] transition-transform duration-300 ease-in-out md:sticky md:translate-x-0 ${
                     isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             >
                 {/* Scrollable area if screen gets too short */}
                 <div className="flex h-full flex-col overflow-y-auto px-5 py-8">
                     
-                    {/* Brand Header (Full Name, No Logo Icon) */}
+                    {/* Brand Header */}
                     <div className="mb-10 px-2">
                         <h1 className="text-xl font-extrabold text-gray-950 tracking-tight leading-snug">
                             Automated Social<br />
