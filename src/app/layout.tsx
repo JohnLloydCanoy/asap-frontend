@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "../../components/ui/NavigationBar";
+import PageCompiler from "./pages/PageCompiler";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
           <NavigationBar />
           <main className="min-h-screen flex-1 bg-white pt-16 md:pt-0">
             {children}
+
           </main>
         </div>
       </body>
