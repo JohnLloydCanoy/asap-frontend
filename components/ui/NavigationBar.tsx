@@ -36,7 +36,6 @@ const NAVIGATION_ITEMS: NavigationItem[] = [
     { label: "Profile", href: "/profile", icon: FaUser }, // <-- Added Profile Tab
     { label: "Settings", href: "/settings", icon: FaCog },
     
-    // Utilities (Pushed to the bottom)
     { label: "Help", href: "/help", icon: FaQuestionCircle, isUtility: true },
 ];
 
