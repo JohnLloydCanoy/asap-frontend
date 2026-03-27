@@ -29,14 +29,14 @@ type NavigationItem = {
 // --- DATA STRUCTURE---
 const NAVIGATION_ITEMS: NavigationItem[] = [
     // Main Features
-    { label: "Dashboard", href: "../../src/app/pages/Home/page.tsx", icon: FaHome },
-    { label: "Analytics", href: "/analytics", icon: FaChartBar },
-    { label: "Calendar", href: "/calendar", icon: FaCalendarAlt },
-    { label: "Ask AI", href: "/ask-ai", icon: FaRobot },
-    { label: "Profile", href: "/profile", icon: FaUser }, // <-- Added Profile Tab
-    { label: "Settings", href: "/settings", icon: FaCog },
+    { label: "Dashboard", href: "/pages/Home", icon: FaHome },
+    { label: "Analytics", href: "/pages/Analytics", icon: FaChartBar },
+    { label: "Calendar", href: "/pages/Calendar", icon: FaCalendarAlt },
+    { label: "Ask AI", href: "/pages/AskAI", icon: FaRobot },
+    { label: "Profile", href: "/pages/Profile", icon: FaUser }, // <-- Added Profile Tab
+    { label: "Settings", href: "/pages/Settings", icon: FaCog },
     
-    { label: "Help", href: "/help", icon: FaQuestionCircle, isUtility: true },
+    { label: "Help", href: "/pages/Help", icon: FaQuestionCircle, isUtility: true },
 ];
 
 export default function NavigationBar() {
