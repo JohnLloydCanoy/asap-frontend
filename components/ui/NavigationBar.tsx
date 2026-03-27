@@ -141,7 +141,7 @@ export default function NavigationBar() {
 
                         {/* Log out Action */}
                         <Link
-                            href=""
+                            href="https://asap-web-tau.vercel.app/"
                             className="group flex items-center gap-4 rounded-2xl px-5 py-3.5 text-[15px] font-semibold text-gray-500 transition-all duration-200 hover:bg-red-50 hover:text-red-600"
                         >
                             <FaSignOutAlt className="h-[18px] w-[18px] shrink-0 text-gray-400 group-hover:text-red-500 transition-colors" />
