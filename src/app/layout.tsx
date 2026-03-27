@@ -31,7 +31,6 @@ export default function RootLayout({
           <NavigationBar />
           <main className="min-h-screen flex-1 bg-white pt-16 md:pt-0">
             {children}
-            <PageCompiler />
           </main>
         </div>
       </body>
